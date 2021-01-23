@@ -21,10 +21,18 @@ const buttonClicked = () => {
   console.log("CLICKされたよーーーーーーーーん");
   const companyName = document.querySelector("#company-name").value;
   const email = document.querySelector("#email").value;
-  const service = document.querySelector("#service").value;
+  //   const service = document.querySelector("#service").value;
+  //   ラジオボタン の取得 - start
+  var serviceRadio = document.querySelector("#service-radio");
+  var radioNodeList = serviceRadio.serviceRadioType;
+  var service = radioNodeList.value;
+  //   ラジオボタン の取得 - end
   const deliveryDate = document.querySelector("#delivery-date").value;
   const msg = document.querySelector("#msg").value;
   lineRequest(companyName, email, service, deliveryDate, msg);
 };
 
 document.querySelector("#button").addEventListener("click", buttonClicked);
+
+const ochinchin = document.querySelector("#ochinchindsahoiasdhjfpiojsepfueje");
+console.log(ochinchin);

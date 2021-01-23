@@ -11,7 +11,12 @@
         <p id="form-title">お問い合わせ</p>
         <p>会社名</p><input type="text" id="company-name" size="30" value="会社名を入力">
         <p>Email</p><input type="text" id="email" size="30" value="Email">
-        <p>サービス</p><input type="text" id="service" size="30" value="サービス">
+        <form id="service-radio">
+            <input name="serviceRadioType" type="radio" value="Webアプリ"> Webアプリ
+            <input name="serviceRadioType" type="radio" value="WordPress"> WordPress
+            <input name="serviceRadioType" type="radio" value="Webサイト"> Webサイト
+        </form>
+        <!-- <p>サービス</p><input type="text" id="service" size="30" value="サービス"> -->
         <p>納期</p><input type="text" id="delivery-date" size="30" value="納期">
         <p>お問い合わせ内容</p><input type="text" id="msg" size="30" value="お問い合わせ">
         <button id="button" type="button">提出</button>
